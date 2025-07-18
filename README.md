@@ -14,6 +14,8 @@ Notifcare menghadirkan berbagai macam *interaction box* (seperti alert bawaan Ja
     - [Prompt](#prompt)
     - [File Input](#file-input)
     - [Ads Box](#ads)
+    - [Toast](#toast)
+    - [loading](#loading)
   - [Kostumisasi](#kostumisasi)
     - [Custom Fonts](#ganti-font)
     - [Full Custom (Tanpa CSS Default)](#full-custom)
@@ -30,6 +32,30 @@ Lihat dokumentasi pada:
 ---
 
 ## CHANGE LOG
+
+### Version (V1.2.1) ✅⚙️ *(Sab, 20 Jul 2025)*
+
+🔧 **Fix:**
+- 🚫 Beberapa bug file `notifcare.css` dan modul seperti `alert.js`, `confirm.js` tidak dimuat otomatis saat `notifcare.js` dipanggil terlalu awal.
+
+✅ **Solusi:**
+- 📦 Modul kini otomatis tersedia meskipun `notifcare.js` ditaruh di `<head>` tanpa atribut `defer`.
+
+---
+
+### Version (V1.2.0) 🎯🔥 *(Jum, 18 Jul 2025)*
+
+🚀 **Update Besar – Modularisasi Fungsi**
+
+✨ Manajemen file kini lebih ringan dan fleksibel.
+
+✅ **Penambahan Fitur Baru:**
+- 🔸 `Notifcare.Toast()` – menampilkan notifikasi mengambang ringan (top-left, top-right, bottom-left, bottom-right).
+- 🔸 `Notifcare.Loading()` – tampilan loading animasi dengan opsi pesan, mode terang/gelap, dan auto-close timer.
+
+📌 **Catatan Developer:**
+- Untuk pemakaian optimal, pastikan file `notifcare.js` ditempatkan sebelum `</body>`.
+- Versi ini memberikan dasar kuat untuk plugin eksternal dan pengembangan fitur lebih lanjut.
 
 ### Version (V1.1.1 - V1.1.2)
 - 🔧 **Fix:** Masalah pada pemanggilan file `notifcare.css` yang tidak termuat otomatis telah diperbaiki.  
